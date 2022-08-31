@@ -10,7 +10,7 @@ source:
   sha256: b1572b86e6d60261b60657e0657be63712f3971cfdfe3933f83cfdc045ab9f83
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
@@ -22,6 +22,7 @@ requirements:
     - python >=3.6
     - numpy
     - jax
+    - diffmah >=0.3.0
 
 test:
   imports:
