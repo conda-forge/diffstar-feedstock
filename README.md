@@ -1,11 +1,11 @@
-About diffstar
-==============
+About diffstar-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/diffstar-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ArgonneCPAC/diffstar
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/diffstar-feedstock/blob/main/LICENSE.txt)
 
 Summary: Differentiable star formation histories
 
