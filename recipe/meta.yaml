@@ -24,6 +24,7 @@ requirements:
     - numpy
     - jax
     - diffmah >=0.3.0
+    - h5py
 
 test:
   imports:
