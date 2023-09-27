@@ -1,5 +1,5 @@
 {% set name = "diffstar" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/ArgonneCPAC/diffstar/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: b1572b86e6d60261b60657e0657be63712f3971cfdfe3933f83cfdc045ab9f83
+  sha256: 6e98cdf088aff2a2bd2b4cedd54a0822459b42e4a151164026df22062c0f8098
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
@@ -18,11 +18,13 @@ requirements:
   host:
     - python >=3.6
     - pip
+    - setuptools_scm
   run:
     - python >=3.6
     - numpy
     - jax
     - diffmah >=0.3.0
+    - h5py
 
 test:
   imports:
@@ -32,7 +34,7 @@ about:
   home: https://github.com/ArgonneCPAC/diffstar
   license: BSD-3-Clause
   license_family: BSD
-  license_file: LICENSE
+  license_file: LICENSE.rst
   summary: Differentiable star formation histories
 
 extra:
