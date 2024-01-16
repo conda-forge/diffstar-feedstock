@@ -10,7 +10,7 @@ source:
   sha256: 5cad885fb79f3c856e6d1d943b1af35d4b8026dd26f3efbbaab132c45c825b06
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
@@ -23,7 +23,7 @@ requirements:
     - python >=3.6
     - numpy
     - jax
-    - diffmah >=0.3.0
+    - diffmah >=0.5.0
     - h5py
 
 test:
