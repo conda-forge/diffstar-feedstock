@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ArgonneCPAC/diffstar/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: bed80360af10e484ae8a8df790a8b670b01becea6c253c42485078d7fb55c350
+  sha256: 1ec939cf10fbf68a14cea0d7d9014852d09089afb0a7d4d388e43f4bc514c4a0
 
 build:
   number: 1
