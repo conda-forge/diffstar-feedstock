@@ -1,5 +1,6 @@
 {% set name = "diffstar" %}
-{% set version = "0.3.2" %}
+{% set version = "0.3.3" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +8,10 @@ package:
 
 source:
   url: https://github.com/ArgonneCPAC/diffstar/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 1ec939cf10fbf68a14cea0d7d9014852d09089afb0a7d4d388e43f4bc514c4a0
+  sha256: ee3d94ac1af146eee0f77bef5d62b2f564bed9029eda43bb19cedb0d0b51d7c9
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
@@ -24,12 +25,15 @@ requirements:
     - python >={{ python_min }}
     - numpy
     - jax
-    - diffmah >=0.5.0
+    - diffmah >=0.7.0
     - h5py
 
 test:
+  commands:
+    - pip check
   requires:
     - python {{ python_min }}
+    - pip
   imports:
     - diffstar
 
