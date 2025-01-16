@@ -33,6 +33,7 @@ test:
     - pip check
   requires:
     - python {{ python_min }}
+    - pip
   imports:
     - diffstar
 
