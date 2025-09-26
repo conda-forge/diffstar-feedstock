@@ -1,5 +1,5 @@
 {% set name = "diffstar" %}
-{% set version = "0.3.4" %}
+{% set version = "0.3.5" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/ArgonneCPAC/diffstar/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 6a7e08eef84faf93adac8de4e8db0f79e663babbdcc0c0a6b1e23a2ced8e2fa2
+  sha256: 8a9882108ad92a6d382fcb418ae33285ec3feb989a5450ee1812a37498ee4d92
 
 build:
   number: 0
